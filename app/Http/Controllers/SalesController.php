@@ -39,11 +39,11 @@ class SalesController extends Controller
 
                     // SalesCsvProcess::dispatch($data, $header);
                     $batch->add(new SalesCsvProcess($data, $header));
-                    if ($i == 10) {
-                        return "Data Stored";
-                    } else {
-                        $i++;
-                    }
+                    // if ($i == 10) {
+                    //     return "Data Stored";
+                    // } else {
+                    //     $i++;
+                    // }
                 }
 
 
