@@ -23,7 +23,7 @@ class SalesController extends Controller
 
                 $data   =   file(request()->mycsv);
                 // Chunking file
-                $chunks = array_chunk($data, 250);
+                $chunks = array_chunk($data, 1000);
 
                 $header = [];
                 $batch  = Bus::batch([])->dispatch();
